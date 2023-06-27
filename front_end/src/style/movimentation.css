@@ -1,0 +1,73 @@
+.main-content-movimentation {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: rgb(0, 2, 18);
+  align-items: center;
+  color: white;
+}
+
+.movimentation-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 400px; /* Define uma largura máxima para evitar que o formulário fique muito largo */
+  background-color: #282A3A;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 10px;
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno ao formulário */
+}
+
+.movimentation-form label {
+  margin-bottom: 10px; /* Adiciona espaçamento inferior aos labels */
+  display: flex;
+  flex-direction: column;
+}
+
+.movimentation-form input,
+.movimentation-form select {
+  padding: 8px;
+  border: none;
+  margin: 8px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.negotiation-type {
+  display: flex; /* Adiciona um display flex */
+  align-items: center; /* Centraliza verticalmente os radio buttons */
+  margin-bottom: 10px; /* Adiciona espaçamento inferior */
+  justify-content: center;
+}
+
+.negotiation-type label {
+  display: flex; /* Disposição lado a lado */
+  align-items: center; /* Centraliza verticalmente os radio buttons com os textos */
+  margin-right: 20px; /* Adiciona espaçamento à direita dos labels */
+}
+
+.movimentation-form button {
+  background-color: #1d9dff;
+  border: none;
+  color: white;
+  width: 400px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 20px; /* Adiciona espaçamento superior ao botão */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.movimentation-form button:hover {
+  opacity: 1;
+}
+
+.movimentation-form button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
